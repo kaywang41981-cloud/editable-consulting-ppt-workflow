@@ -1,0 +1,2 @@
+page_id,slide_number,title,route,outline_status,svg_file,svg_version,svg_approval,pptx_file,source_status,qa_status,deviations
+S01,1,Example takeaway title,A,approved,01-example-v1.svg,v1,approved,01-example.pptx,verified,candidate,

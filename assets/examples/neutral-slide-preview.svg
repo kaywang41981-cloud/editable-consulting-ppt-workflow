@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Neutral editable consulting slide preview</title>
+  <desc id="desc">A demonstration SVG only. It must not replace a user-provided template.</desc>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1600" height="20" fill="#174A7E"/>
+  <text x="90" y="105" font-family="Arial, Microsoft YaHei, sans-serif" font-size="22" fill="#5B6770">DEMONSTRATION ONLY · 仅用于测试</text>
+  <text x="90" y="175" font-family="Microsoft YaHei, Arial, sans-serif" font-size="42" font-weight="700" fill="#17324D">先确认沟通目标，再将证据转化为可编辑页面</text>
+  <line x1="90" y1="215" x2="1510" y2="215" stroke="#D5DDE5" stroke-width="2"/>
+  <rect x="90" y="285" width="410" height="360" rx="16" fill="#F3F7FA" stroke="#D5DDE5"/>
+  <rect x="595" y="285" width="410" height="360" rx="16" fill="#F3F7FA" stroke="#D5DDE5"/>
+  <rect x="1100" y="285" width="410" height="360" rx="16" fill="#F3F7FA" stroke="#D5DDE5"/>
+  <circle cx="155" cy="355" r="32" fill="#174A7E"/>
+  <circle cx="660" cy="355" r="32" fill="#1E7A6E"/>
+  <circle cx="1165" cy="355" r="32" fill="#A85D19"/>
+  <text x="145" y="367" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="650" y="367" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="1155" y="367" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="120" y="435" font-family="Microsoft YaHei, Arial, sans-serif" font-size="29" font-weight="700" fill="#17324D">澄清与母版审计</text>
+  <text x="625" y="435" font-family="Microsoft YaHei, Arial, sans-serif" font-size="29" font-weight="700" fill="#17324D">SVG 批量确认</text>
+  <text x="1130" y="435" font-family="Microsoft YaHei, Arial, sans-serif" font-size="29" font-weight="700" fill="#17324D">原生 PPTX 与 QA</text>
+  <text x="120" y="495" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" fill="#526273">一次只问一个问题</text>
+  <text x="120" y="538" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" fill="#526273">读取页面尺寸与安全区</text>
+  <text x="625" y="495" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" fill="#526273">按精确长宽比设计</text>
+  <text x="625" y="538" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" fill="#526273">确认后再进入制作</text>
+  <text x="1130" y="495" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" fill="#526273">表格、图表和文字可编辑</text>
+  <text x="1130" y="538" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" fill="#526273">结构、字体、渲染及数据验证</text>
+  <text x="90" y="820" font-family="Arial, Microsoft YaHei, sans-serif" font-size="17" fill="#6D7882">Source: neutral test fixture · This SVG is not a production template.</text>
+  <text x="1490" y="820" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#6D7882">1</text>
+</svg>

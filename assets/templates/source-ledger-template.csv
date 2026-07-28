@@ -1,0 +1,2 @@
+source_id,slide_ids,claim,classification,organization,title,url,publication_date,access_date,evidence_quote,scope_notes,verification_status,confidence
+SRC-001,S01,Example claim,verified fact,Example organization,Example source,https://example.com,2026-01-01,2026-01-02,Exact supporting quotation,"Entity; geography; period; unit",verified,high
