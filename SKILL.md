@@ -1,6 +1,6 @@
 ---
 name: editable-consulting-ppt-workflow
-description: Create, redesign, or research professional PowerPoint slides through a template-faithful SVG approval workflow, then build and verify native-editable PPTX files. Use for PPT, PPTX, slide, deck, screenshot-to-slide, slide beautification, consulting presentation, research deck, editable PowerPoint, SVG preview, template/master preservation, native charts, or batch slide production.
+description: Create, redesign, or research professional PowerPoint slides through a template-faithful, page-type-aware SVG approval workflow, then build and verify native-editable PPTX files. Use for PPT, PPTX, slide, deck, screenshot-to-slide, slide beautification, consulting presentation, Japanese business presentation, research deck, editable PowerPoint, SVG preview, template/master preservation, native charts, layout strategy selection, or batch slide production.
 ---
 
 # Editable Consulting PPT Workflow
@@ -11,6 +11,7 @@ Produce evidence-backed, visually approved, native-editable PowerPoint slides wi
 
 - Read `references/workflows.md` for the screenshot-led and research-led routes.
 - Read `references/design-and-build.md` before creating SVG previews or PPTX files.
+- Read `references/layout-strategy-library.zh-CN.md` before selecting the composition of a consulting slide, especially for Japanese business materials, dense case pages, comparisons, mechanisms, processes, or mixed chart-and-text pages.
 - Read `references/research-and-sources.md` whenever external research informs slide content.
 - Read `references/qa-and-acceptance.md` before building the final PPTX and again before delivery.
 - Read `references/cross-agent-adapters.md` when choosing tools or when a required capability is missing.
@@ -23,8 +24,9 @@ Ask exactly one question at a time until the following are known or the user exp
 1. Communication objective, audience, and desired decision or takeaway.
 2. User-provided PPTX template or source deck, plus the source screenshot/content.
 3. Language, slide scope, output grouping, and approval batch size.
-4. Research boundary, source standard, and factual cutoff date when research is required.
-5. Required deliverables and acceptance conditions.
+4. Output mode: projected presentation, leave-behind report, or both.
+5. Research boundary, source standard, and factual cutoff date when research is required.
+6. Required deliverables and acceptance conditions.
 
 Surface one relevant blind spot with each material question. Do not begin research, SVG design, or PPTX production while a missing answer could change the result materially.
 
@@ -40,6 +42,23 @@ Before promising a final editable PPTX, verify that the execution environment ca
 - export PPTX and run structural plus visual QA.
 
 If any required capability is unavailable, explain the gap and stop final PPTX production. Never substitute a full-slide screenshot, flattened SVG, or rasterized page and call it editable.
+
+## Layout strategy gate
+
+Before creating an SVG, define the page's communication job and select one page-type strategy from `references/layout-strategy-library.zh-CN.md`.
+
+Record at least:
+
+- page type and selected pattern ID;
+- why the pattern fits the page claim;
+- module count and width allocation;
+- output mode: projected presentation or leave-behind report;
+- density tier and expected Japanese copy-expansion reserve when relevant;
+- evidence status: sample-observed, professional fallback, or evidence gap.
+
+Treat the client PPTX master, fonts, colors, margins, title bar, footer, logo, and page-number behavior as higher priority than any strategy-library measurement. Borrow information hierarchy, spatial organization, and visual narrative only. Do not copy publisher marks, screenshots, wording, data, logos, decorative signatures, or uniquely identifying visual assets from reference examples.
+
+Prefer two to four primary information modules for projected slides. Permit up to six short, scan-friendly cards or a structured native table for leave-behind pages only when the output mode and density tier are recorded. Change the composition, split the slide, or shorten the copy before shrinking below the template's readable type scale. When several strategies could work, choose the one that makes the evidence-to-implication chain most obvious rather than the one that looks most decorative.
 
 ## Select one route
 
@@ -74,6 +93,7 @@ When named external skills are unavailable, apply the equivalent framework in `r
 - Support single-slide and multi-slide approval batches.
 - Size the SVG from the supplied PPTX page dimensions; never assume 16:9.
 - Show the intended final hierarchy, spacing, title, body zone, visuals, source rail, and template furniture.
+- Show the selected layout pattern, output mode, normalized module proportions, density tier, and Japanese expansion reserve where relevant.
 - Treat SVG as a visual specification, not as the final slide body.
 - Record approved SVG version, approval status, and later deviations.
 
@@ -85,7 +105,7 @@ When named external skills are unavailable, apply the equivalent framework in `r
 4. Map the approved SVG body proportionally into the inherited body/safe area, then recreate it with native objects.
 5. Use editable PowerPoint text boxes, shapes, tables, connectors, and charts. Keep photos, product images, logos, screenshots, maps, and other raster media as independent image objects.
 6. Use native editable tables for two-dimensional information. Use native charts with an embedded editable Excel workbook for trends, shares, comparisons, and other quantitative relationships.
-7. Use Microsoft YaHei for Chinese text and Arial for English letters and numbers in new or edited content. If either font is missing, previews may use a documented substitute, but the PPTX cannot be marked final.
+7. Use Microsoft YaHei for Chinese text and Arial for English letters and numbers in new or edited content unless the supplied template specifies otherwise. For Japanese text, preserve the client template's Japanese font; do not substitute a Chinese font. If a required production font is missing, previews may use a documented substitute, but the PPTX cannot be marked final.
 8. Preserve undisclosed data as `Not disclosed` or the audience-language equivalent, such as `未公开`; never invent a number.
 9. Add visible concise source footnotes and put full traceability in speaker notes or the delivered source ledger.
 10. Produce individual-slide files, combined files, or both according to the user's current instruction; do not impose a one-slide-only limitation.
@@ -112,6 +132,7 @@ Before delivery, complete all gates in `references/qa-and-acceptance.md`, includ
 - full-size render of every slide;
 - template/master fidelity comparison;
 - empty-placeholder, clipping, overlap, crop, label-capacity, and data-match checks;
+- output-mode fit, layout-pattern fit, module-count, gutter, whitespace, density, and Japanese copy-expansion checks;
 - final reopen and visual inspection in Microsoft PowerPoint for macOS.
 
 ## Stop conditions

@@ -5,6 +5,10 @@
 - Final PPTX:
 - Approved SVG version:
 - Source ledger:
+- Page type / layout pattern ID:
+- Output mode: projected / leave-behind
+- Layout evidence status:
+- Density tier / Japanese expansion reserve:
 
 ## Automated checks
 
@@ -19,6 +23,10 @@
 - [ ] No clipping, overflow, unintended overlap, or title wrapping
 - [ ] Charts, tables, images, labels, units, and source footnotes are legible
 - [ ] Page matches approved SVG or deviations are recorded
+- [ ] Layout pattern matches the page's communication job
+- [ ] Output mode is explicit; projected pages do not use leave-behind density
+- [ ] Module count, proportions, gutters, whitespace, and density match the page manifest
+- [ ] Japanese production copy fits in the required font without consuming the documented reserve
 - [ ] Data matches the embedded workbook and source ledger
 
 ## macOS PowerPoint acceptance

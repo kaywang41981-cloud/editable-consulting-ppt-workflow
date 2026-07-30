@@ -1,4 +1,4 @@
 interface:
   display_name: "Editable Consulting PPT Workflow"
-  short_description: "Research, design, build, and verify editable PPTX decks"
-  default_prompt: "Use $editable-consulting-ppt-workflow to create a template-faithful, native-editable PowerPoint through a confirmed SVG preview workflow."
+  short_description: "Select layouts, design, build, and verify editable PPTX decks"
+  default_prompt: "Use $editable-consulting-ppt-workflow to select a page-type layout and create a template-faithful, native-editable PowerPoint through a confirmed SVG preview workflow."

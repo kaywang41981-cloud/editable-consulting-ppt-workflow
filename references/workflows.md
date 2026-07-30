@@ -19,6 +19,7 @@ Clarify, in order of materiality:
 - audience and communication objective;
 - user-provided PPTX template/source deck;
 - page content, language, and factual scope;
+- output mode: meeting projection, leave-behind reading, or both;
 - single page versus batch, individual versus combined deck;
 - SVG approval batch size and whether the user explicitly waives approval;
 - sources, cutoff date, and confidentiality constraints;
@@ -42,6 +43,7 @@ Do not ask a checklist of questions at once. Explain the concrete blind spot beh
 - Inspect every relevant source slide, not only the screenshot.
 - Identify the correct source layout, title zone, body/safe area, source rail, logo, footer, and page-number behavior.
 - Inventory master, layout, theme, and placeholder structure.
+- Classify the communication job and select a pattern from `layout-strategy-library.zh-CN.md`; record its evidence status and normalized body proportions.
 
 ### A3. Design the SVG preview
 
@@ -78,6 +80,7 @@ Define the client question, audience, geography, period, inclusions, exclusions,
 - Give each slide one narrative job and one primary claim.
 - Link evidence to implication and decision.
 - Produce a detailed outline containing title, key message, content blocks, visual form, evidence, sources, and open questions for every slide.
+- Add page type, layout pattern ID, module count, density tier, and Japanese expansion reserve to the outline or page manifest.
 
 ### B4. Approval sequence
 
@@ -91,7 +94,7 @@ Define the client question, audience, geography, period, inclusions, exclusions,
 
 Batch size is flexible. Confirm it for each task or infer it only when the user authorizes judgment.
 
-- Keep a page manifest with slide number, title, SVG version, approval state, PPTX build state, source state, and QA state.
+- Keep a page manifest with slide number, title, page type, output mode, layout pattern ID, evidence status, density tier, Japanese expansion reserve, SVG version, approval state, PPTX build state, source state, and QA state.
 - Build only approved pages unless the SVG gate was explicitly waived.
 - Run structural checks after each build batch and full visual QA near delivery.
 - Allow individual page PPTX, a multi-page batch PPTX, and a final combined deck.

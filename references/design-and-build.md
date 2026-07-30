@@ -3,12 +3,13 @@
 ## Contents
 
 1. Template contract
-2. SVG preview standard
-3. Native-object mapping
-4. Typography
-5. Tables and charts
-6. Images and diagrams
-7. File outputs
+2. Layout strategy selection
+3. SVG preview standard
+4. Native-object mapping
+5. Typography
+6. Tables and charts
+7. Images and diagrams
+8. File outputs
 
 ## 1. Template contract
 
@@ -20,7 +21,19 @@
 - Keep unused masters and layouts when the user requires the independent output to retain the complete template structure.
 - Change masters only for intentional global changes approved by the user.
 
-## 2. SVG preview standard
+## 2. Layout strategy selection
+
+- Read `layout-strategy-library.zh-CN.md` before composing a consulting-style body area.
+- Classify the page by its communication job, not by its industry vocabulary.
+- Classify the output mode as `projected presentation` or `leave-behind report`; use projected-mode density when the use case is unknown.
+- Select one primary pattern and record its pattern ID in the page manifest.
+- Translate normalized proportions into the inherited body/safe area; never overwrite template margins with screenshot-derived coordinates.
+- Use sample-observed strategies as candidates, not universal truths. The current library contains two visual families from one publishing ecosystem and requires broader validation before any pattern becomes a mandatory default.
+- Learn information architecture from dense leave-behind report pages, but do not transfer their small type or high text density to projected slides.
+- Reserve additional text capacity when Chinese source copy will be translated into Japanese. Reflow, shorten, or split before reducing the type scale.
+- Reject a visually attractive pattern when it weakens the evidence-to-implication chain or hides uncertainty.
+
+## 3. SVG preview standard
 
 SVG is a visual contract, not a production shortcut.
 
@@ -32,7 +45,7 @@ SVG is a visual contract, not a production shortcut.
 - Validate XML, viewBox, fonts, and external references with `scripts/validate_svg.py`.
 - Do not embed script, remote fonts, or remote images.
 
-## 3. Native-object mapping
+## 4. Native-object mapping
 
 Map each SVG element before building:
 
@@ -48,17 +61,18 @@ Map each SVG element before building:
 
 Do not place a full-slide SVG or PNG as the final page background when editability is required.
 
-## 4. Typography
+## 5. Typography
 
 - New or edited Chinese text: Microsoft YaHei.
 - New or edited English letters and numbers: Arial.
+- New or edited Japanese text: preserve the client template's Japanese font. If the template does not define one, ask for the required font before final production and document any preview substitute.
 - Mixed runs should use separate font runs when the authoring tool supports them.
 - Preserve unchanged template furniture unless the user asks to restyle it.
 - If required fonts are absent, permit a preview using a documented substitute, but mark it non-final.
 - Match the source template's intended hierarchy and sizes. Shorten copy or change layout before shrinking text.
 - Never allow a one-line title field to wrap unexpectedly.
 
-## 5. Tables and charts
+## 6. Tables and charts
 
 ### Tables
 
@@ -75,7 +89,7 @@ Do not place a full-slide SVG or PNG as the final page background when editabili
 - For truncated labels, inspect geometry, gap width, plot area, and chart XML before reducing font size.
 - Use `Not disclosed` or `未公开` rather than fabricated values.
 
-## 6. Images and diagrams
+## 7. Images and diagrams
 
 - Photos, product images, logos, screenshots, and map bases may remain raster or SVG image objects.
 - Keep images independent from native annotations.
@@ -83,7 +97,7 @@ Do not place a full-slide SVG or PNG as the final page background when editabili
 - Inspect crop, resolution, aspect ratio, and licensing/source.
 - Build simple diagrams natively. Use complex external visuals only when they materially improve comprehension and their editability limit is disclosed.
 
-## 7. File outputs
+## 8. File outputs
 
 Follow the user's current instruction:
 

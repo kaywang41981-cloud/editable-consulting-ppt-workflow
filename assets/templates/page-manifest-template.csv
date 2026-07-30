@@ -1,2 +1,2 @@
-page_id,slide_number,title,route,outline_status,svg_file,svg_version,svg_approval,pptx_file,source_status,qa_status,deviations
-S01,1,Example takeaway title,A,approved,01-example-v1.svg,v1,approved,01-example.pptx,verified,candidate,
+page_id,slide_number,title,route,page_type,output_mode,layout_pattern_id,layout_evidence_status,module_count,width_or_height_allocation,density_tier,japanese_expansion_reserve,outline_status,svg_file,svg_version,svg_approval,pptx_file,source_status,qa_status,deviations
+S01,1,Example takeaway title,A,mechanism,projected,MECH-3,sample-observed,3,32%-32%-32%,medium,20%,approved,01-example-v1.svg,v1,approved,01-example.pptx,verified,candidate,

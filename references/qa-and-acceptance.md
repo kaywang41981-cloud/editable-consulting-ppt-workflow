@@ -46,11 +46,14 @@ Render and inspect every slide individually at full size. Check:
 - title hierarchy and one-line title fit;
 - clipping, overflow, unintended overlap, and off-canvas objects;
 - body density, alignment, spacing rhythm, and visual balance;
+- output mode is explicit, and projected slides do not inherit leave-behind report density;
+- selected layout-pattern fit, module count, width allocation, gutters, and whitespace against the page manifest;
 - chart labels, legends, axes, units, and table readability;
 - image crop, sharpness, identity, and aspect ratio;
 - source footnote legibility;
 - consistency with the approved SVG;
 - slide-to-slide consistency and variation in a multi-page deck.
+- Japanese copy capacity in the production font, including the documented expansion reserve when translation follows Chinese drafting.
 
 A montage is useful for flow but never replaces full-size inspection.
 
@@ -73,6 +76,8 @@ Treat known inherited placeholder behavior carefully. Never hide an empty placeh
 - Verify data did not change during geometry or label fixes.
 - Match source footnotes and ledger IDs to the displayed claim.
 - Separate facts, estimates/views, and hypotheses.
+- Preserve explicit evidence-status labels for sample-observed layout rules, professional fallbacks, and evidence gaps.
+- Preserve the `projected` versus `leave-behind` output-mode label and challenge any high-density projected page.
 - Use `未公开` or `Not disclosed` when a figure is unavailable.
 
 ## 6. macOS PowerPoint acceptance
