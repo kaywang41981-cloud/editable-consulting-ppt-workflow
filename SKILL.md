@@ -108,11 +108,16 @@ When named external skills are unavailable, apply the equivalent framework in `r
 3. Replace the inherited title content with the approved page title while retaining the intended title-bar structure.
 4. Map the approved SVG body proportionally into the inherited body/safe area, then recreate it with native objects.
 5. Use editable PowerPoint text boxes, shapes, tables, connectors, and charts. Keep photos, product images, logos, screenshots, maps, and other raster media as independent image objects.
-6. Use native editable tables for two-dimensional information. Use native charts with an embedded editable Excel workbook for trends, shares, comparisons, and other quantitative relationships.
-7. Use Microsoft YaHei for Chinese text and Arial for English letters and numbers in new or edited content unless the supplied template specifies otherwise. For Japanese text, preserve the client template's Japanese font; do not substitute a Chinese font. If a required production font is missing, previews may use a documented substitute, but the PPTX cannot be marked final.
-8. Preserve undisclosed data as `Not disclosed` or the audience-language equivalent, such as `未公开`; never invent a number.
-9. Add visible concise source footnotes and put full traceability in speaker notes or the delivered source ledger.
-10. Produce individual-slide files, combined files, or both according to the user's current instruction; do not impose a one-slide-only limitation.
+6. Construct text for downstream editability, not only for visual fit:
+   - Use one text container for one semantic block. Keep its paragraphs, explicit line breaks, local emphasis, colors, and mixed-language runs inside that container.
+   - Set text-box width from the page grid and the parent module's content boundary. Never narrow, widen, or horizontally stretch a text box merely to force a desired number of lines.
+   - Prefer placing text directly inside cards, title bars, labels, and buttons instead of overlaying separate text boxes.
+   - Split text only when it requires independent movement, independent animation, or materially different alignment. If copy does not fit, shorten, reflow, enlarge the module, or split the slide before fragmenting the text or using shrink-to-fit as a workaround.
+7. Use native editable tables for two-dimensional information. Use native charts with an embedded editable Excel workbook for trends, shares, comparisons, and other quantitative relationships.
+8. Use Microsoft YaHei for Chinese text and Arial for English letters and numbers in new or edited content unless the supplied template specifies otherwise. For Japanese text, preserve the client template's Japanese font; do not substitute a Chinese font. If a required production font is missing, previews may use a documented substitute, but the PPTX cannot be marked final.
+9. Preserve undisclosed data as `Not disclosed` or the audience-language equivalent, such as `未公开`; never invent a number.
+10. Add visible concise source footnotes and put full traceability in speaker notes or the delivered source ledger.
+11. Produce individual-slide files, combined files, or both according to the user's current instruction; do not impose a one-slide-only limitation.
 
 ## Verification gates
 
@@ -132,6 +137,7 @@ Before delivery, complete all gates in `references/qa-and-acceptance.md`, includ
 
 - factual cross-check and adversarial review;
 - native-object and embedded-workbook inspection;
+- semantic-block text-container inspection, including unnecessary fragmentation, grid-aligned widths, explicit line breaks, and text placed directly inside suitable parent shapes;
 - font resolution and text-fit inspection;
 - full-size render of every slide;
 - template/master fidelity comparison;

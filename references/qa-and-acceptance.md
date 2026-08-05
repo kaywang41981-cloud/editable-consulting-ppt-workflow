@@ -30,6 +30,9 @@ Do not call the deck final when a mandatory gate fails.
 - Slide dimensions match the supplied template.
 - Required masters, layouts, and themes are preserved.
 - Text, shapes, tables, connectors, and charts remain native-editable.
+- Each semantic block uses one text container unless independent movement, animation, or materially different alignment justifies separation.
+- Cards, title bars, labels, and buttons contain their text directly when the parent shape can support it reliably; no unnecessary overlay text boxes remain.
+- Text-box widths follow the page grid and parent-module content boundaries rather than being narrowed or stretched to force a target line count.
 - Photos and other permitted images remain independent objects.
 - No full-slide screenshot or flattened SVG substitutes for editable content.
 - Every native chart has an embedded editable workbook.
@@ -44,6 +47,8 @@ Run `inspect_pptx.py`, `check_fonts.py`, `compare_template.py`, and `qa_pptx.py`
 Render and inspect every slide individually at full size. Check:
 
 - title hierarchy and one-line title fit;
+- intentional paragraph and manual line breaks are preserved inside unified semantic text containers;
+- no text is made to fit through avoidable horizontal text-box distortion, unnecessary object fragmentation, or undocumented shrink-to-fit behavior;
 - clipping, overflow, unintended overlap, and off-canvas objects;
 - body density, alignment, spacing rhythm, and visual balance;
 - output mode is explicit, and projected slides do not inherit leave-behind report density;

@@ -64,6 +64,16 @@ Map each SVG element before building:
 
 Do not place a full-slide SVG or PNG as the final page background when editability is required.
 
+### Text-container construction
+
+- Use one text container for one semantic block, even when the block contains multiple lines, paragraphs, local bolding, color changes, or mixed Chinese/English/Japanese runs.
+- Use explicit paragraph breaks or manual line breaks inside that container when a specific reading break is required.
+- Derive text-box width from the page grid, column width, card padding, and parent-module boundary. Do not narrow, widen, or horizontally stretch a text box to manufacture a target line count.
+- Keep the text box aligned to the parent module's content area. If a translation or copy revision no longer fits, revise the copy, increase the module height, change the composition, or split the slide before changing the grid-defined width.
+- Put text directly inside a card, title bar, label, button, or other suitable native shape so the shape and its text move and resize together.
+- Add a separate text box only when the text requires independent movement, independent animation, or materially different alignment from the parent object.
+- Do not use `shrinkText` or equivalent auto-fit behavior to conceal avoidable overflow or object fragmentation. Treat any necessary exception as a documented fit decision and verify it in PowerPoint.
+
 ## 5. Typography
 
 - New or edited Chinese text: Microsoft YaHei.
