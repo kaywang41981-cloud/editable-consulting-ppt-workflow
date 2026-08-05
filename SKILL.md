@@ -60,6 +60,10 @@ Treat the client PPTX master, fonts, colors, margins, title bar, footer, logo, a
 
 Prefer two to four primary information modules for projected slides. Permit up to six short, scan-friendly cards or a structured native table for leave-behind pages only when the output mode and density tier are recorded. Change the composition, split the slide, or shorten the copy before shrinking below the template's readable type scale. When several strategies could work, choose the one that makes the evidence-to-implication chain most obvious rather than the one that looks most decorative.
 
+Do not add a full-width bottom summary or implication box merely to make a slide feel complete. Treat any bottom band as an optional, evidence-linked module rather than a default ending. Add one only when it contributes decision-critical meaning not already conveyed by the title, subtitle, chart, or body, such as a non-obvious implication, risk, assumption, or next action. Otherwise omit it.
+
+Vary conclusion placement according to the page's communication job. Use a claim-led title, a concise subtitle that introduces the body, an in-context highlight, a side insight rail, or no separate conclusion module when those choices are clearer. Do not mechanically replace every bottom band with a subtitle block or repeat the same summary device across consecutive slides. Functional source notes, legends, and required template footers are not summary modules and remain governed by their own requirements.
+
 ## Select one route
 
 ### Route A: supplied page content or screenshot
@@ -133,6 +137,7 @@ Before delivery, complete all gates in `references/qa-and-acceptance.md`, includ
 - template/master fidelity comparison;
 - empty-placeholder, clipping, overlap, crop, label-capacity, and data-match checks;
 - output-mode fit, layout-pattern fit, module-count, gutter, whitespace, density, and Japanese copy-expansion checks;
+- redundant-summary and repetition checks: no decorative bottom conclusion band, no restatement of the title or body, and no mechanical reuse of one conclusion placement across the deck;
 - final reopen and visual inspection in Microsoft PowerPoint for macOS.
 
 ## Stop conditions

@@ -52,7 +52,9 @@ Render and inspect every slide individually at full size. Check:
 - image crop, sharpness, identity, and aspect ratio;
 - source footnote legibility;
 - consistency with the approved SVG;
-- slide-to-slide consistency and variation in a multi-page deck.
+- slide-to-slide consistency and variation in a multi-page deck;
+- no decorative or redundant full-width bottom summary box; any implication band adds decision-critical meaning not already stated in the title, subtitle, chart, or body;
+- conclusion placement varies with page logic rather than mechanically repeating a bottom band or moving every summary into the subtitle area;
 - Japanese copy capacity in the production font, including the documented expansion reserve when translation follows Chinese drafting.
 
 A montage is useful for flow but never replaces full-size inspection.

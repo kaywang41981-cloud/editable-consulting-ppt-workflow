@@ -32,6 +32,9 @@
 - Learn information architecture from dense leave-behind report pages, but do not transfer their small type or high text density to projected slides.
 - Reserve additional text capacity when Chinese source copy will be translated into Japanese. Reflow, shorten, or split before reducing the type scale.
 - Reject a visually attractive pattern when it weakens the evidence-to-implication chain or hides uncertainty.
+- Treat a full-width bottom summary or implication band as opt-in, not as a default page ending. Use it only for decision-critical meaning that is absent from the title, subtitle, chart, and body.
+- Prefer the simplest placement that advances the page logic: claim-led title, concise subtitle lead-in, in-context emphasis, side insight rail, or no separate conclusion module. Do not mechanically move every summary to the subtitle area.
+- Review adjacent slides together and vary composition when repeated conclusion devices create template-like monotony or aesthetic fatigue.
 
 ## 3. SVG preview standard
 
